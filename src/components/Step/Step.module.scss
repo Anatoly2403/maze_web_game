@@ -1,0 +1,13 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(205, 136, 136);
+  box-shadow: inset -5px -5px 5px 0 rgba(0, 0, 0, .5),
+    inset 5px 5px 5px 0 rgba(255, 255, 255, 0.5);
+  user-select: none;
+
+  &_active{
+    background: rgba(201, 169, 169, 0.789);
+  }
+}

@@ -1,0 +1,24 @@
+.root {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(205, 136, 136);
+  box-shadow: inset -5px -5px 5px 0 rgba(0, 0, 0, .5),
+    inset 5px 5px 5px 0 rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  user-select: none;
+  color: rgb(238, 213, 112);
+  font-size: 24px;
+  font-weight: bold;
+
+
+  &:active {
+    transform: scale(0.99);
+  }
+
+  &_selected{
+    background: rgb(136, 205, 139);
+  }
+}

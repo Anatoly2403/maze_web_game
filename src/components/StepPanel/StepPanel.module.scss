@@ -1,0 +1,10 @@
+.root {
+  height: 200px;
+  width: 100%;
+  border: 6px saddlebrown solid;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 4px;
+  padding: 2px;
+}

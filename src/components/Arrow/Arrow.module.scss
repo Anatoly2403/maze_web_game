@@ -1,0 +1,44 @@
+.root {
+  width: 30px;
+
+  &_up {
+    transform: rotate(270deg);
+  }
+
+  &_down {
+    transform: rotate(90deg);
+  }
+
+  &_left {
+    transform: rotate(180deg);
+  }
+
+  &__arrow {
+    position: relative;
+    width: 90%;
+    height: 5px;
+    background-color: #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      width: 60%;
+      height: 5px;
+      right: -4px;
+      background-color: #fff;
+    }
+
+    &::after {
+      top: -4px;
+      transform: rotate(45deg);
+    }
+
+    &::before {
+      top: 4px;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+      transform: rotate(-45deg);
+    }
+  }
+}
